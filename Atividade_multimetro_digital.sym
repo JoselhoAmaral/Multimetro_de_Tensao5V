@@ -1,0 +1,118 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016-019 multimetro.display
+01A     multimetro.flag
+01B-01E multimetro.entradaAnalogica
+01F-022 multimetro.tensao
+023-02C multimetro.digito
+02D-030 @DIVFF.P1
+02D-030 @SFTOI.P2
+02D-030 @ADDFF.P3
+02D-02E @ITOF.P4
+02D     multimetro.@SCRATCH1
+02E     multimetro.@SCRATCH2
+02F     multimetro.@SCRATCH3
+030     multimetro.@SCRATCH4
+031-034 @DIVFF.P1
+031-034 @MULFF.P2
+031-034 @ADDFF.P3
+035-038 @MULFF.P1
+035     @DIVFF.@SCRATCH1
+035     @ADDFF.@SCRATCH1
+036     @DIVFF.@SCRATCH2
+036     @ADDFF.@SCRATCH2
+037     @DIVFF.@SCRATCH3
+037     @ADDFF.@SCRATCH3
+038     @DIVFF.@SCRATCH4
+038     @ADDFF.@SCRATCH4
+039     @DIVFF.@SCRATCH5
+039     @MULFF.@SCRATCH1
+039     @ADDFF.@SCRATCH5
+03A     @DIVFF.@SCRATCH6
+03A     @MULFF.@SCRATCH2
+03A     @ADDFF.@SCRATCH6
+03B     @MULFF.@SCRATCH3
+03B     @ADDFF.@SCRATCH7
+03C     @ADDFF.@SCRATCH8
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  @ITOF
+0000CC  @DIVFF
+000228  @MULFF
+00031A  @SFTOI
+000352  @ADDFF
+0005BC  multimetro
+0008E0  @goto10697
+000902  MAIN
+000902  @cinit1
+000926  @cinit2
+
+Project Directory:
+    C:\Users\Joselho Amaral\Documents\IFCE\S8 - Eng. Automação e Controle\Microcontroladores\Atividade Extra 2\
+
+Project Files:
+    Atividade_multimetro_digital.c                          [06-ago-21 18:53  CRC=3E9B5C4C]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.h [12-nov-13 14:35  CRC=5337E248]
+
+Source signature=E50B20DC
+
+Units:
+    Atividade_multimetro_digital (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Atividade_multimetro_digital.xsym
+    Errors:      Atividade_multimetro_digital.err
+    Ext Symbols: Atividade_multimetro_digital.esym
+    INHX32:      Atividade_multimetro_digital.hex
+    Symbols:     Atividade_multimetro_digital.sym
+    List:        Atividade_multimetro_digital.lst
+    Debug/COFF:  Atividade_multimetro_digital.cof
+    Project:     Atividade_multimetro_digital.ccspjt
+    Call Tree:   Atividade_multimetro_digital.tre
+    Statistics:  Atividade_multimetro_digital.STA
